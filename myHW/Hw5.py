@@ -1,7 +1,8 @@
+#-*-coding:utf-8-*-
 import random
 
 class Human:
-    def __init__(self, name, sex, birthday, hair_length, nail_length, nail_color = "бесцветные"):
+    def __init__(self, name, sex, birthday, hair_length, nail_length, nail_color = "Р±РµСЃС†РІРµС‚РЅС‹Рµ"):
         self.name = name
         self.sex = sex
         self.birthday = birthday
@@ -10,7 +11,7 @@ class Human:
         self.nail_color = nail_color
 
     def __str__(self):
-        return f'Я {self.name}, у меня волосы длины {self.hair_length} см. и {self.nail_color} ногти длины {self.nail_length} мм.'
+        return f'РЇ {self.name}, Сѓ РјРµРЅСЏ РІРѕР»РѕСЃС‹ РґР»РёРЅС‹ {self.hair_length} СЃРј. Рё {self.nail_color} РЅРѕРіС‚Рё РґР»РёРЅС‹ {self.nail_length} РјРј.'
 
 class Worker:
     def __init__(self, name, sex, birthday):
@@ -22,7 +23,7 @@ class Manicurist(Worker):
     def do_job(self, other) :
         if other.nail_length > 1 :
             other.nail_length -= 1
-        other.nail_color = random.choice(['красные', 'фиолетовые', 'зелёные'])
+        other.nail_color = random.choice(['РєСЂР°СЃРЅС‹Рµ', 'С„РёРѕР»РµС‚РѕРІС‹Рµ', 'Р·РµР»С‘РЅС‹Рµ'])
 
 class Hairdresser(Worker):
     def do_job(self, other) :
