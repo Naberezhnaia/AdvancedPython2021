@@ -1,0 +1,16 @@
+img {
+    width: 20rem;
+}
+body{
+    background-color: powderblue;
+}
+h1 {
+    font-family: 'Roboto', 'Verdana', sans-serif;
+}
+
+div {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: block;
+}
